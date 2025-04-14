@@ -35,41 +35,40 @@ bookstore-api-automation/
 └── 📄 pom.xml                              # Maven dependencies
 
 
-<h2><b>Prerequisites</b></h2>
-
+🛠️ Prerequisites
 Java 11+
 Maven
-Eclipse IDE
+Eclipse or IntelliJ IDEA
 
-Setup & Installation
-
-Clone the repository
+⚙️ Setup & Installation
+1. Clone the repository
 git clone https://github.com/yourusername/bookstore-api-automation.git
 
-Import as Maven project
+2. Import as Maven project
 In Eclipse/IntelliJ:
 File -> Import -> Existing Maven Project
 
-Configure Credentials
+3. Configure Credentials
 Update src/test/resources/config.properties:
-base.url=https://api.bookstore.com
+
+base.url=http://127.0.0.1:8000
 username=your_username
 password=your_password
 
-Install Dependencies
+4. Install Dependencies
 mvn clean test
 
-
-Run All Tests:
+🚀 Run Tests
+Run All Tests
 mvn clean test
 
-Generate Allure Report:
+Generate Allure Report
 allure serve allure-results
 
 Run Specific Test Suite:
 mvn test -Dsuite=testng.xml
 
-Reporting
+📊 Reporting
 Allure Reports
 Generates interactive HTML reports
 
@@ -83,7 +82,7 @@ HTML report: test-output/emailable-report.html
 
 XML reports: test-output/testng-results.xml
 
-Test Coverage ✅
+✅ Test Coverage
 Authentication
 ✔️ User signup
 
@@ -103,37 +102,14 @@ Book Operations
 🗑️ Delete book
 
 
-
-
-
-mvn clean test
-
-
-
-
-
-Reporting
-
-Allure reports are generated in allure-results
-TestNG reports are generated in target/surefire-reports
-
-Test Coverage
-
-Authentication
-User signup
-User login
-Invalid credentials handling
-Book Operations
-  -Create new book
-  -Get book by ID
-  -Get all books
-  -Update book
-  -Delete book
-
-Contributing
+🤝 Contributing
 
 Fork the project
+
 Create your feature branch
+
 Commit your changes
+
 Push to the branch
+
 Create a Pull Request
