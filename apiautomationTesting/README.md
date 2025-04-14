@@ -35,7 +35,7 @@ bookstore-api-automation/
 └── 📄 pom.xml                              # Maven dependencies
 
 
-Prerequisites
+<h2><b>Prerequisites</b></h2>
 
 Java 11+
 Maven
