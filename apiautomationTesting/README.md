@@ -35,25 +35,26 @@ bookstore-api-automation/
 └── 📄 pom.xml                              # Maven dependencies
 
 
-🛠️ **Prerequisites**
+🛠️ Prerequisites
 Java 11+
 Maven
 Eclipse or IntelliJ IDEA
 
-⚙️ **Setup & Installation**
-**1. Clone the repository**
+⚙️ Setup & Installation
+1. Clone the repository
 git clone https://github.com/yourusername/bookstore-api-automation.git
 
-**2. Import as Maven project**
+2. Import as Maven project
 In Eclipse/IntelliJ:
 File -> Import -> Existing Maven Project
 
-**3. Configure Credentials**
+3. Configure Credentials
 Update src/test/resources/config.properties:
+(**Please configure valid login credential in config.properties file to run the application**)
 
-**base.url=http://127.0.0.1:8000
-**test.email=your_username
-**test.password=your_password
+base.url=http://127.0.0.1:8000
+test.email=your_username
+test.password=your_password
 
 4. Install Dependencies
 mvn clean test
